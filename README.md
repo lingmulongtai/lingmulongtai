@@ -75,7 +75,6 @@
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lingmulongtai)](https://github.com/anuraghazra/github-readme-stats)
 
-[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=lingmulongtai)](https://github.com/anuraghazra/github-readme-stats)
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
