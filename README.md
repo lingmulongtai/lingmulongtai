@@ -1,49 +1,61 @@
 <h1 align="center">👋 こんにちは、Ryutaです！</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E9EF7&center=true&vCenter=true&width=435&lines=Welcome+to+my+GitHub+profile!;ソフトウェア開発が好きです;新しい技術を学ぶことが楽しい" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E9EF7&center=true&vCenter=true&width=435&lines=Welcome+to+my+GitHub+profile!;ソフトウェア開発が好きです！;新しい技術に挑戦中！" />
 </p>
 
 ---
 
 ## 🙋‍♂️ 自己紹介
 
-ソフトウェア開発に情熱を持っているRyutaと申します。  
-新しい技術を学び、問題を解決することが大好きです。
+こんにちは！ソフトウェア開発に情熱を持っているRyutaです。  
+日々、新しい技術を学び、課題解決に取り組むのが大好きです。  
+チームでの協力やオープンソースへの貢献も積極的に目指しています。
 
 ---
 
 ## 🔧 スキル・技術
 
 ### 💻 プログラミング言語
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](#)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](#)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#)
 
 ### 🛠️ ツール・フレームワーク
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](#)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](#)
+[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](#)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](#)
+
+### ☁️ クラウド・サービス
+[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)](#)
+[![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)](#)
 
 ---
 
-## 📊 GitHub統計
+## 📊 GitHub 統計
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=lingmulongtai&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
 </p>
-
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=lingmulongtai&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</p>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=lingmulongtai&theme=tokyonight" alt="Profile Summary" />
+</p>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=lingmulongtai&theme=tokyonight" alt="Top Languages" />
 </p>
 
 ---
 
 ## 🌱 現在の取り組み
 
-- 🔭 新しいプロジェクトに挑戦中
-- 📚 最新の技術トレンドを学習中
-- 💡 オープンソースプロジェクトへの貢献を検討中
+- 🔭 新規プロジェクトやオープンソース開発への挑戦
+- 📚 最新技術トレンド・AI・クラウド関連の学習
+- 🤝 コラボレーション、コミュニティへの貢献
 
 ---
 
@@ -51,14 +63,16 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-lingmulongtai-181717?style=for-the-badge&logo=github)](https://github.com/lingmulongtai)
 [![Email](https://img.shields.io/badge/Email-lingmulongtai200@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lingmulongtai200@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ryuta-blue?style=for-the-badge&logo=linkedin&logoColor=white)](#)
 
 ---
 
 ## ⚡ その他
 
-- 🎯 目標：継続的な学習と成長
+- 🎯 目標：継続的な学習と成長／新技術への挑戦
 - 🤝 コラボレーションやプロジェクトの相談はお気軽にどうぞ
-- ✨ 「継続は力なり」をモットーに日々コーディング
+- ✨ モットー：「継続は力なり」
+- 😄 趣味：読書・旅行・カフェ巡り
 
 ---
 
@@ -69,18 +83,3 @@
 <p align="center">
   ⭐️ From <a href="https://github.com/lingmulongtai">lingmulongtai</a>
 </p>
-## Hi there 👋
-
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=lingmulongtai)](https://github.com/anuraghazra/github-readme-stats)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lingmulongtai)](https://github.com/anuraghazra/github-readme-stats)
-
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
