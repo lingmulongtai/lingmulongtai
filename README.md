@@ -68,7 +68,7 @@
 ## 📫 連絡先 / Contact
 
 [![GitHub](https://img.shields.io/badge/GitHub-lingmulongtai-181717?style=for-the-badge&logo=github)](https://github.com/lingmulongtai)  
-[![Email](https://img.shields.io/badge/Email-lingmulongtai200@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ryuta@ryutasuzuki.engineer)  
+[![Email](https://img.shields.io/badge/Email-ryuta@ryutasuzuki.engineer-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ryuta@ryutasuzuki.engineer)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ryuta-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ryuta-suzuki-101372372/)
 
 ---
