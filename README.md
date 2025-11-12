@@ -1,14 +1,14 @@
-<h1 align="center">👋 こんにちは、Ryutaです！ / Hi, I'm Ryuta!</h1>
+# 👋 こんにちは、Ryutaです！ / Hi, I'm Ryuta!
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E9EF7&center=true&vCenter=true&width=640&lines=Welcome+to+my+GitHub+profile!;ソフトウェア開発が好き��[...]">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E9EF7&center=true&vCenter=true&width=640&lines=Welcome+to+my+GitHub+profile!;ソフトウェア開発が好きで、日々新しい技術を学び課題解決に取り組んでいます;Open+to+collaboration+and+open+source+contributions" />
 </p>
 
 ---
 
 ## 🙋‍♂️ 自己紹介 / About Me
 
-- こんにちは！ソフトウェア開発に情熱を持っているRyutaです。日々、新しい技術を学び、課題解決に取り組むのが大好きです。チームでの協力や[...]  
+- こんにちは！ソフトウェア開発に情熱を持っているRyutaです。日々、新しい技術を学び、課題解決に取り組むのが大好きです。チームでの協力やオープンソースへの貢献にも積極的です。  
 - Hi! I'm Ryuta, a software developer passionate about learning new technologies and solving problems. I enjoy collaboration and actively seek opportunities to contribute to open source.
 
 ---
