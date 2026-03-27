@@ -1,8 +1,8 @@
 <!-- Header Wave -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:70a5fd,100:bf91f3&height=200&section=header&text=Ryuta%20%2F%20%E9%88%B4%E6%9C%A8%E9%9A%86%E5%A4%AA&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Software%20Developer%20%7C%20AI%20%26%20Cloud%20Enthusiast&descAlignY=58&descSize=18&animation=fadeIn" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:70a5fd,100:bf91f3&height=200&section=header&text=Ryuta&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Software+Developer+%7C+AI+%26+Cloud+Enthusiast&descAlignY=58&descSize=20&animation=fadeIn" />
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=70A5FD&center=true&vCenter=true&width=700&lines=Welcome+to+my+GitHub+profile!+%F0%9F%91%8B;ソフトウェア開発が好きで、日々新しい技術を学んでいます;Open+to+collaboration+%26+open+source+%F0%9F%8C%90;AI+%7C+Cloud+%7C+Building+cool+things+every+day+%E2%9C%A8" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&pause=1000&color=70A5FD&center=true&vCenter=true&width=700&lines=Welcome+to+my+GitHub+profile!+%F0%9F%91%8B;Software+Developer+%7C+AI+%26+Cloud+Enthusiast;Open+to+collaboration+%26+open+source+%F0%9F%8C%90;Consistency+is+power+%E2%9C%A8" />
 </p>
 
 <p align="center">
@@ -29,9 +29,9 @@ I enjoy collaboration and actively seek opportunities to contribute to open sour
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/🇯🇵%20日本語-ネイティブ-1a1b27?style=flat-square&labelColor=1a1b27&color=70a5fd" />
+  <img src="https://img.shields.io/badge/%F0%9F%87%AF%F0%9F%87%B5%20%E6%97%A5%E6%9C%AC%E8%AA%9E-%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96-70a5fd?style=flat-square" />
   &nbsp;
-  <img src="https://img.shields.io/badge/🇺🇸%20English-Fluent-1a1b27?style=flat-square&labelColor=1a1b27&color=bf91f3" />
+  <img src="https://img.shields.io/badge/%F0%9F%87%BA%F0%9F%87%B8%20English-Fluent-bf91f3?style=flat-square" />
 </p>
 
 ---
@@ -70,7 +70,7 @@ I enjoy collaboration and actively seek opportunities to contribute to open sour
 <table align="center" width="100%">
   <tr>
     <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=lingmulongtai&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true&count_private=true" width="100%" />
+      <img src="https://github-readme-stats.vercel.app/api?username=lingmulongtai&show_icons=true&theme=tokyonight&hide_border=true" width="100%" />
     </td>
     <td align="center" width="50%">
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=lingmulongtai&theme=tokyonight&hide_border=true" width="100%" />
@@ -87,7 +87,7 @@ I enjoy collaboration and actively seek opportunities to contribute to open sour
 ## 🏆 GitHub トロフィー / Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=lingmulongtai&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" width="100%" />
+  <img src="https://github-profile-trophy.vercel.app/?username=lingmulongtai&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6" width="100%" />
 </p>
 
 ---
