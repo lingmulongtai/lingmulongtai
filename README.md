@@ -1,8 +1,8 @@
 <!-- Header Wave -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:70a5fd,100:bf91f3&height=200&section=header&text=Ryuta&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Software+Developer+%7C+AI+%26+Cloud+Enthusiast&descAlignY=58&descSize=20&animation=fadeIn" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:70a5fd,100:bf91f3&height=180&section=header&text=Hi%2C+I%27m+Ryuta!&fontSize=52&fontColor=ffffff&fontAlignY=42" />
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&pause=1000&color=70A5FD&center=true&vCenter=true&width=700&lines=Welcome+to+my+GitHub+profile!+%F0%9F%91%8B;Software+Developer+%7C+AI+%26+Cloud+Enthusiast;Open+to+collaboration+%26+open+source+%F0%9F%8C%90;Consistency+is+power+%E2%9C%A8" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&pause=1000&color=70A5FD&center=true&vCenter=true&width=700&lines=Welcome+to+my+GitHub+profile!;Software+Developer+%7C+AI+and+Cloud+Enthusiast;Open+to+collaboration+and+open+source;Consistency+is+power" />
 </p>
 
 <p align="center">
@@ -29,9 +29,9 @@ I enjoy collaboration and actively seek opportunities to contribute to open sour
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/%F0%9F%87%AF%F0%9F%87%B5%20%E6%97%A5%E6%9C%AC%E8%AA%9E-%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96-70a5fd?style=flat-square" />
+  <img src="https://img.shields.io/badge/Japanese-Native-70a5fd?style=flat-square" />
   &nbsp;
-  <img src="https://img.shields.io/badge/%F0%9F%87%BA%F0%9F%87%B8%20English-Fluent-bf91f3?style=flat-square" />
+  <img src="https://img.shields.io/badge/English-Fluent-bf91f3?style=flat-square" />
 </p>
 
 ---
@@ -67,16 +67,10 @@ I enjoy collaboration and actively seek opportunities to contribute to open sour
 
 ## 📊 GitHub 統計 / GitHub Stats
 
-<table align="center" width="100%">
-  <tr>
-    <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=lingmulongtai&show_icons=true&theme=tokyonight&hide_border=true" width="100%" />
-    </td>
-    <td align="center" width="50%">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=lingmulongtai&theme=tokyonight&hide_border=true" width="100%" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=lingmulongtai&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=lingmulongtai&theme=tokyonight&hide_border=true" />
+</p>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lingmulongtai&theme=tokyonight&hide_border=true&layout=compact&langs_count=8" />
@@ -87,7 +81,7 @@ I enjoy collaboration and actively seek opportunities to contribute to open sour
 ## 🏆 GitHub トロフィー / Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=lingmulongtai&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6" width="100%" />
+  <img src="https://github-profile-trophy.vercel.app/?username=lingmulongtai&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6" />
 </p>
 
 ---
@@ -102,34 +96,22 @@ I enjoy collaboration and actively seek opportunities to contribute to open sour
 
 ## 🌱 現在の取り組み / Currently Working On
 
-<p align="center">
-
-🔭 &nbsp;**新規プロジェクトやオープンソース開発への挑戦**
-&emsp;Exploring new projects and contributing to open source
-
-📚 &nbsp;**最新技術トレンド・AI・クラウド関連の学習**
-&emsp;Learning about the latest tech trends, AI, and cloud
-
-🤝 &nbsp;**コラボレーション、コミュニティへの貢献**
-&emsp;Collaboration and community contributions
-
-</p>
+- 🔭 **新規プロジェクトやオープンソース開発への挑戦**
+  Exploring new projects and contributing to open source
+- 📚 **最新技術トレンド・AI・クラウド関連の学習**
+  Learning about the latest tech trends, AI, and cloud
+- 🤝 **コラボレーション、コミュニティへの貢献**
+  Collaboration and community contributions
 
 ---
 
 ## ⚡ その他 / More
 
-<p align="center">
-
-🎯 &nbsp;**目標 / Goal:** 継続的な学習と成長、新技術への挑戦
-&emsp;Continuous learning and growth; embracing new technologies
-
-✨ &nbsp;**モットー / Motto:** 「継続は力なり」— *"Consistency is power"*
-
-😄 &nbsp;**趣味 / Hobbies:** 読書 📖 · 旅行 ✈️ · カフェ巡り ☕
-&emsp;Reading · Traveling · Visiting cafes
-
-</p>
+- 🎯 **目標 / Goal:** 継続的な学習と成長、新技術への挑戦
+  Continuous learning and growth; embracing new technologies
+- ✨ **モットー / Motto:** 「継続は力なり」— *"Consistency is power"*
+- 😄 **趣味 / Hobbies:** 読書 📖 · 旅行 ✈️ · カフェ巡り ☕
+  Reading · Traveling · Visiting cafes
 
 ---
 
