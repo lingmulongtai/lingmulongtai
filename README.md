@@ -68,20 +68,13 @@ I enjoy collaboration and actively seek opportunities to contribute to open sour
 ## 📊 GitHub 統計 / GitHub Stats
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=lingmulongtai&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=lingmulongtai&theme=tokyonight&hide_border=true" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=lingmulongtai&theme=tokyonight" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lingmulongtai&theme=tokyonight&hide_border=true&layout=compact&langs_count=8" />
-</p>
-
----
-
-## 🏆 GitHub トロフィー / Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=lingmulongtai&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lingmulongtai&theme=tokyonight&hide_border=true" />
+  &nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=lingmulongtai&theme=tokyonight" />
 </p>
 
 ---
