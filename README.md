@@ -1,18 +1,18 @@
 <!-- Header Wave -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:70a5fd,100:bf91f3&height=180&section=header&text=Hi%2C+I%27m+Ryuta!&fontSize=52&fontColor=ffffff&fontAlignY=42" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2E3440,50:5E81AC,100:3B4252&height=180&section=header&text=Hi%2C+I%27m+Ryuta!&fontSize=52&fontColor=ffffff&fontAlignY=42" />
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&pause=1000&color=70A5FD&center=true&vCenter=true&width=700&lines=Welcome+to+my+GitHub+profile!;Software+Developer+%7C+AI+and+Cloud+Enthusiast;Open+to+collaboration+and+open+source;Consistency+is+power" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&pause=1000&color=88C0D0&center=true&vCenter=true&width=700&lines=Welcome+to+my+GitHub+profile!;Software+Developer+based+in+Japan;Passionate+about+building+reliable+systems;Learning+something+new+every+day" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/lingmulongtai"><img src="https://img.shields.io/badge/GitHub-lingmulongtai-181717?style=flat-square&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/lingmulongtai"><img src="https://img.shields.io/badge/GitHub-lingmulongtai-3B4252?style=flat-square&logo=github&logoColor=88C0D0" /></a>
   &nbsp;
-  <a href="mailto:ryuta@ryutasuzuki.engineer"><img src="https://img.shields.io/badge/Email-ryuta@ryutasuzuki.engineer-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
+  <a href="mailto:ryuta@ryutasuzuki.engineer"><img src="https://img.shields.io/badge/Email-ryuta@ryutasuzuki.engineer-BF616A?style=flat-square&logo=gmail&logoColor=white" /></a>
   &nbsp;
-  <a href="https://www.linkedin.com/in/ryuta-suzuki-101372372/"><img src="https://img.shields.io/badge/LinkedIn-Ryuta%20Suzuki-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/ryuta-suzuki-101372372/"><img src="https://img.shields.io/badge/LinkedIn-Ryuta%20Suzuki-5E81AC?style=flat-square&logo=linkedin&logoColor=white" /></a>
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=lingmulongtai&style=flat-square&color=bf91f3&label=Profile+Views" />
+  <img src="https://komarev.com/ghpvc/?username=lingmulongtai&style=flat-square&color=88C0D0&label=Profile+Views" />
 </p>
 
 <br/>
@@ -24,14 +24,15 @@
 <p align="center">
 こんにちは！ソフトウェア開発に情熱を持っているRyutaです。<br/>
 日々、新しい技術を学び、課題解決に取り組むのが大好きです。チームでの協力やオープンソースへの貢献にも積極的です。<br/><br/>
-Hi! I'm <strong>Ryuta</strong>, a software developer passionate about learning new technologies and solving real-world problems.<br/>
-I enjoy collaboration and actively seek opportunities to contribute to open source. Always leveling up in <strong>AI</strong> and <strong>Cloud</strong>. ☁️
+Hi! I'm <strong>Ryuta</strong>, a software developer based in Japan.<br/>
+I enjoy building things that actually work — from backend systems to cloud infrastructure.<br/>
+Always curious, always learning. ☁️
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Japanese-Native-70a5fd?style=flat-square" />
+  <img src="https://img.shields.io/badge/Japanese-Native-5E81AC?style=flat-square" />
   &nbsp;
-  <img src="https://img.shields.io/badge/English-Fluent-bf91f3?style=flat-square" />
+  <img src="https://img.shields.io/badge/English-Fluent-81A1C1?style=flat-square" />
 </p>
 
 ---
@@ -112,13 +113,21 @@ I enjoy collaboration and actively seek opportunities to contribute to open sour
 ## 📊 GitHub 統計 / GitHub Stats
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=lingmulongtai&theme=tokyonight" width="100%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=lingmulongtai&theme=nord_dark" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lingmulongtai&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lingmulongtai&theme=nord&hide_border=true" />
   &nbsp;
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=lingmulongtai&theme=tokyonight" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=lingmulongtai&theme=nord_dark" />
+</p>
+
+---
+
+## 🏆 トロフィー / Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=lingmulongtai&theme=nord&no-frame=true&no-bg=true&margin-w=6&column=7" width="100%" />
 </p>
 
 ---
@@ -126,7 +135,7 @@ I enjoy collaboration and actively seek opportunities to contribute to open sour
 ## 📈 貢献グラフ / Contribution Activity
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=lingmulongtai&theme=tokyo-night&hide_border=true&area=true&area_color=70a5fd" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=lingmulongtai&theme=nord&hide_border=true&area=true" width="100%" />
 </p>
 
 ---
@@ -163,7 +172,7 @@ I enjoy collaboration and actively seek opportunities to contribute to open sour
 </p>
 
 <!-- Footer Wave -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:bf91f3,50:70a5fd,100:1a1b27&height=120&section=footer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:3B4252,50:5E81AC,100:2E3440&height=120&section=footer" />
 
 <p align="center">
   <em>⭐️ From <a href="https://github.com/lingmulongtai">lingmulongtai</a> — thanks for stopping by!</em>
