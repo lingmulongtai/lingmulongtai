@@ -127,7 +127,7 @@ Always curious, always learning. ☁️
 ## 🏆 トロフィー / Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=lingmulongtai&theme=nord&no-frame=true&no-bg=true&margin-w=6&column=7" width="100%" />
+  <img src="https://github-profile-trophy.vercel.app/?username=lingmulongtai&theme=nord&no-frame=true&margin-w=4&column=6" width="100%" />
 </p>
 
 ---
