@@ -124,7 +124,7 @@ Always curious, always learning. ☁️
 
 ---
 
-## 🏅 バッヂ / Badges
+## 🏅 バッジ / Badges
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/lingmulongtai?style=for-the-badge&logo=github&label=Followers&color=5E81AC" />
