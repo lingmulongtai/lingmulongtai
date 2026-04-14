@@ -124,10 +124,13 @@ Always curious, always learning. ☁️
 
 ---
 
-## 🏆 トロフィー / Trophies
+## 🏅 バッヂ / Badges
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=lingmulongtai&theme=nord&no-frame=true&margin-w=4&column=6" width="100%" />
+  <img src="https://img.shields.io/github/followers/lingmulongtai?style=for-the-badge&logo=github&label=Followers&color=5E81AC" />
+  <img src="https://img.shields.io/github/stars/lingmulongtai?style=for-the-badge&logo=github&label=Stars&color=88C0D0" />
+  <img src="https://img.shields.io/github/last-commit/lingmulongtai/lingmulongtai?style=for-the-badge&logo=github&label=Last%20Commit&color=81A1C1" />
+  <img src="https://img.shields.io/github/commit-activity/m/lingmulongtai/lingmulongtai?style=for-the-badge&logo=github&label=Commits%2FMonth&color=4C566A" />
 </p>
 
 ---
