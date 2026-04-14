@@ -128,9 +128,9 @@ Always curious, always learning. ☁️
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/lingmulongtai?style=for-the-badge&logo=github&label=Followers&color=5E81AC" />
-  <img src="https://img.shields.io/github/stars/lingmulongtai?style=for-the-badge&logo=github&label=Stars&color=88C0D0" />
-  <img src="https://img.shields.io/github/last-commit/lingmulongtai/lingmulongtai?style=for-the-badge&logo=github&label=Last%20Commit&color=81A1C1" />
-  <img src="https://img.shields.io/github/commit-activity/m/lingmulongtai/lingmulongtai?style=for-the-badge&logo=github&label=Commits%2FMonth&color=4C566A" />
+  <img src="https://img.shields.io/github/stars/lingmulongtai/lingmulongtai?style=for-the-badge&logo=github&label=Repo%20Stars&color=88C0D0" />
+  <img src="https://img.shields.io/github/forks/lingmulongtai/lingmulongtai?style=for-the-badge&logo=github&label=Repo%20Forks&color=81A1C1" />
+  <img src="https://img.shields.io/github/issues/lingmulongtai/lingmulongtai?style=for-the-badge&logo=github&label=Open%20Issues&color=4C566A" />
 </p>
 
 ---
