@@ -176,7 +176,3 @@ Always curious, always learning. ☁️
 
 <!-- Footer Wave -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:3B4252,50:5E81AC,100:2E3440&height=120&section=footer" />
-
-<p align="center">
-  <em>⭐️ From <a href="https://github.com/lingmulongtai">lingmulongtai</a> — thanks for stopping by!</em>
-</p>
