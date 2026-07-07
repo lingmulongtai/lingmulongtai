@@ -3,46 +3,35 @@
 
 <p align="center">
   <a href="https://github.com/lingmulongtai">
-    <img src="https://img.shields.io/badge/GitHub-lingmulongtai-0F172A?style=flat-square&logo=github&logoColor=white" />
-  </a>
-  &nbsp;
-  <a href="mailto:ryuta@ryutasuzuki.engineer">
-    <img src="https://img.shields.io/badge/Email-ryuta@ryutasuzuki.engineer-EF4444?style=flat-square&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/GitHub-lingmulongtai-0F172A?style=flat-square&logo=github&logoColor=white" alt="GitHub: lingmulongtai" />
   </a>
   &nbsp;
   <a href="https://www.linkedin.com/in/ryuta-suzuki-101372372/">
-    <img src="https://img.shields.io/badge/LinkedIn-Ryuta%20Suzuki-2563EB?style=flat-square&logo=linkedin&logoColor=white" />
-  </a>
-  &nbsp;
-  <a href="https://unsplash.com/@srtgraphy">
-    <img src="https://img.shields.io/badge/Unsplash-srtgraphy-111827?style=flat-square&logo=unsplash&logoColor=white" />
+    <img src="https://img.shields.io/badge/LinkedIn-Ryuta%20Suzuki-2563EB?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn: Ryuta Suzuki" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&pause=900&color=38BDF8&center=true&vCenter=true&width=760&lines=Engineering+student+building+real+things.;AI-assisted+apps+%7C+Embedded+systems+%7C+Creative+tools;Founder+%26+Representative+of+KUAS+Photography+Club;Always+learning.+Always+prototyping." />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&pause=900&color=38BDF8&center=true&vCenter=true&width=760&lines=Engineering+student+building+practical+tools.;AI-assisted+apps+%7C+Embedded+systems+%7C+Creative+tech;Small+experiments+%E2%86%92+useful+products;Always+learning.+Always+prototyping." alt="Typing SVG" />
 </p>
 
 ---
 
 ## Hi, I'm Ryuta 👋
 
-I'm a second-year Engineering student at **Kyoto University of Advanced Science (KUAS)**, studying **Electromechanical Engineering**.
+I'm an engineering student interested in building useful software and hardware that connect the digital and physical world.
 
-I like building things that connect the digital and physical world — from **AI-assisted apps** and **web tools** to **embedded systems**, sensors, and creative technology.  
-Outside of coding, I lead the **KUAS Photography Club**, a student community of 65+ members where we organize photo walks, exhibitions, and campus projects.
-
-I care about products that are not only technically interesting, but also useful, clear, and enjoyable to use.
+I mostly work around **AI-assisted apps**, **web tools**, **embedded systems**, sensors, and creative technology. I prefer keeping public details concise and letting projects speak for themselves.
 
 ---
 
 ## What I'm focused on
 
-- 🤖 **AI-assisted development** — using AI as a partner for faster prototyping, better UX, and smarter tools
+- 🤖 **AI-assisted development** — faster prototyping, better UX, and smarter internal tools
 - 🔌 **Embedded & IoT systems** — sensors, microcontrollers, USB-C devices, and real-world interfaces
-- 📱 **Apps & web products** — building practical tools with clean UI and modern workflows
-- 📸 **Creative technology** — photography, visual experiences, and tools for creators
-- 🌍 **Global collaboration** — studying in an English-based engineering environment and working with international teams
+- 📱 **Apps & web products** — practical tools with clean UI and maintainable workflows
+- 🧩 **Creative technology** — visual interfaces and tools for creators
+- 🌍 **Collaboration** — learning, shipping, and improving through feedback
 
 ---
 
@@ -51,13 +40,13 @@ I care about products that are not only technically interesting, but also useful
 ### Main tools I use
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,js,ts,react,nextjs,nodejs,html,css,tailwind,git,github,vscode,arduino,firebase,vercel" />
+  <img src="https://skillicons.dev/icons?i=python,js,ts,react,nextjs,nodejs,html,css,tailwind,git,github,vscode,arduino,firebase,vercel" alt="Python, JavaScript, TypeScript, React, Next.js, Node.js, HTML, CSS, Tailwind CSS, Git, GitHub, VS Code, Arduino, Firebase, Vercel" />
 </p>
 
 ### Also learning / exploring
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=cpp,java,kotlin,swift,rust,fastapi,docker,raspberrypi,linux,matlab" />
+  <img src="https://skillicons.dev/icons?i=cpp,java,kotlin,swift,rust,fastapi,docker,raspberrypi,linux,matlab" alt="C++, Java, Kotlin, Swift, Rust, FastAPI, Docker, Raspberry Pi, Linux, MATLAB" />
 </p>
 
 > I prefer showing what I can build over listing every technology I have ever touched.
@@ -68,58 +57,52 @@ I care about products that are not only technically interesting, but also useful
 
 | Area | What I like building |
 |---|---|
-| **AI Products** | AI-powered tools, assistant-like apps, creative workflows |
-| **Embedded Systems** | Sensor modules, microcontroller projects, hardware demos |
-| **Mobility / Maps** | Flight tracking, satellite visualization, transportation-related systems |
-| **Photography Tech** | Tools and experiences that connect photography, design, and community |
-| **Student Communities** | Digital systems for club management, events, surveys, and exhibitions |
+| **AI Products** | AI-powered tools, assistant-like apps, and creative workflows |
+| **Embedded Systems** | Sensor modules, microcontroller projects, and hardware demos |
+| **Mobility / Maps** | Flight tracking, satellite visualization, and transportation-related systems |
+| **Creative Tools** | Interfaces and utilities that support visual work and rapid prototyping |
+| **Developer Experience** | Small tools that make everyday development smoother |
 
 ### Featured direction
 
 - **AeroGrid-3D** — a 3D real-time flight and satellite tracking map with weather overlays  
   `AI-assisted development / 3D visualization / Google Cloud Run`
 
-- **KUAS Photography Club projects** — event tools, exhibition planning, and digital workflows for a growing student community  
-  `leadership / community / design / operations`
+- **Hardware + software prototypes** — experiments that combine sensors, microcontrollers, cloud services, and simple user interfaces  
+  `embedded systems / UI / automation`
 
 ---
 
-## Leadership
-
-**Founder & Representative — KUAS Photography Club**
-
-I started and lead a diverse photography community at KUAS with 65+ members.  
-Through the club, I work on event planning, team coordination, public communication, exhibitions, and cross-cultural collaboration.
-
-For me, engineering and photography have something in common: both are about observing carefully, designing intentionally, and creating something people can experience.
-
----
-
-## GitHub Stats
+## GitHub Analytics
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=lingmulongtai&theme=github_dark" width="100%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=lingmulongtai&theme=github_dark" width="100%" alt="GitHub profile summary" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=lingmulongtai&show_icons=true&theme=github_dark&hide_border=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lingmulongtai&layout=compact&theme=github_dark&hide_border=true" height="165" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=lingmulongtai&theme=github_dark" height="180" alt="Repositories per language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=lingmulongtai&theme=github_dark" height="180" alt="Most committed languages" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=lingmulongtai&show_icons=true&theme=github_dark&hide_border=true" height="165" alt="GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lingmulongtai&layout=compact&theme=github_dark&hide_border=true" height="165" alt="Top languages" />
 </p>
 
 ---
 
 ## Beyond code
 
-- 📷 Photography and visual storytelling
 - 🧠 Learning by making prototypes
 - 🛠️ Hardware, software, and UI that work together
 - 🚀 Building small ideas into real projects
+- 📷 Visual design and photography as creative inputs
 
 ---
 
 <p align="center">
   <strong>Thanks for visiting!</strong><br/>
-  Feel free to check out my projects or reach out if you're interested in building something together.
+  Feel free to check out my public projects.
 </p>
 
 <!-- Footer Wave -->
