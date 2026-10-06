@@ -68,7 +68,7 @@ AI-assisted tools, sensor-driven prototypes, and clean interfaces for creators.
 
 <h3><code>ryuta@github ~ $ ./links.sh</code></h3>
 
-<a href="https://lingmulongtai.github.io/my-github-portfolio/"><img src="https://img.shields.io/badge/Portfolio-Projects-38bdf8?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio: Ryuta Suzuki — Projects" /></a>
+<a href="https://lingmulongtai.github.io/my-github-portfolio/"><img src="https://img.shields.io/badge/Portfolio-Projects-38bdf8?style=for-the-badge" alt="Portfolio: Ryuta Suzuki — Projects" /></a>
 <a href="https://github.com/lingmulongtai"><img src="https://img.shields.io/badge/GitHub-lingmulongtai-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="GitHub: lingmulongtai" /></a>
 <a href="https://www.linkedin.com/in/ryuta-suzuki-101372372/"><img src="https://img.shields.io/badge/LinkedIn-Ryuta%20Suzuki-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn: Ryuta Suzuki" /></a>
 
