@@ -96,7 +96,9 @@ def progress(tier, value, tiers, unit):
     if value is None:
         floor = tiers[tier - 1] if tier else 0
         return floor / nxt, f"{floor:,}{'+' if tier else ''} / {nxt:,} {unit}"
-    return min(1.0, value / nxt), f"{value:,} / {nxt:,} {unit}"
+    if value >= nxt:  # threshold met, GitHub hasn't awarded it yet
+        return 1.0, f"{value:,} / {nxt:,} · {'x' + str(tier + 1) if tier else 'unlock'} pending"
+    return value / nxt, f"{value:,} / {nxt:,} {unit}"
 
 
 def clip(text):
@@ -113,11 +115,8 @@ for slug, state in ach["badges"].items():
     name, icon, unit, hint = GITHUB.get(slug, (slug.replace("-", " ").title(), "unknown", None, None))
     tiers = TIERS.get(slug, [])
     value, tier = state.get("value"), state.get("tier", 0)
-    if value is not None and tiers:
-        if tier and value < tiers[min(tier, len(tiers)) - 1]:
-            value = None  # API sees less than the badge proves (e.g. private repos): show "16+"
-        else:
-            tier = max(tier, tier_of(value, tiers))
+    if value is not None and tiers and tier and value < tiers[min(tier, len(tiers)) - 1]:
+        value = None  # API sees less than the badge proves (e.g. private repos): show "16+"
     if slug == "starstruck" and state.get("repo"):
         unit = f"★ {state['repo']}"
     ratio, text = progress(tier, value, tiers, unit)

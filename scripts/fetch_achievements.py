@@ -2,12 +2,14 @@
 """
 Collect GitHub achievement state + progress numbers into data/achievements.json.
 
-Two sources, merged so a badge never goes backwards:
-  1. the public achievements tab -- which badges are earned and at what tier,
-     read from the badge image names (pull-shark-bronze-*.png -> x2)
+Two sources:
+  1. the public achievements tab -- the only source of truth for which badges
+     are earned and at what tier, read from the badge image names
+     (pull-shark-bronze-*.png -> x2). Tiers never go backwards.
   2. the GraphQL API -- the numbers behind each badge (merged PRs, stars,
-     accepted answers ...) so locked tiers can show a progress bar. Needs a
-     token; the workflow passes the built-in GITHUB_TOKEN.
+     accepted answers ...) for the progress bars. They never raise a tier on
+     their own: GitHub awards tiers with a delay and by its own counting. Needs
+     a token; the workflow passes the built-in GITHUB_TOKEN.
 
 Whatever a source fails to provide is carried over from the previous run, and
 a failing source is reported as a workflow warning instead of failing the job.
@@ -26,16 +28,8 @@ OUT_PATH = os.path.join(ROOT, "data", "achievements.json")
 TOKEN = os.environ.get("GITHUB_TOKEN")
 TIER_BY_IMAGE = {"default": 1, "bronze": 2, "silver": 3, "gold": 4}
 
-# slug -> tier thresholds (single-tier badges have one threshold of 1)
-TIERS = {
-    "pull-shark": [2, 16, 128, 1024],
-    "starstruck": [16, 128, 512, 4096],
-    "pair-extraordinaire": [1, 10, 24, 48],
-    "galaxy-brain": [2, 8, 16, 32],
-    "quickdraw": [1],
-    "yolo": [1],
-    "public-sponsor": [1],
-}
+CATALOG = ["pull-shark", "starstruck", "pair-extraordinaire", "galaxy-brain",
+           "quickdraw", "yolo", "public-sponsor"]
 
 
 def warn(msg):
@@ -82,7 +76,7 @@ query($q: String!, $cursor: String) {
     nodes {
       ... on PullRequest {
         reviews { totalCount }
-        commits(first: 100) { nodes { commit { message } } }
+        commits(first: 100) { nodes { commit { authors(first: 10) { nodes { user { login } } } } } }
       }
     }
   }
@@ -99,10 +93,11 @@ def merged_pr_stats():
         for pr in page["nodes"]:
             if not pr:
                 continue
-            messages = (c["commit"]["message"] for c in pr["commits"]["nodes"])
-            # trailer presence only -- GitHub additionally requires the co-author
-            # to resolve to an account, so this can run slightly high
-            coauthored += any("co-authored-by:" in m.lower() for m in messages)
+            # commit authors include Co-authored-by trailers, resolved to accounts
+            # the way GitHub does it; unresolved emails (most AI/bot trailers) are null
+            logins = {a["user"]["login"].lower() for c in pr["commits"]["nodes"]
+                      for a in c["commit"]["authors"]["nodes"] if a["user"]}
+            coauthored += bool(logins - {USER.lower()})
             unreviewed += pr["reviews"]["totalCount"] == 0
         if not page["pageInfo"]["hasNextPage"]:
             break
@@ -138,16 +133,12 @@ def sponsoring():
     return data["user"]["sponsoring"]["totalCount"]
 
 
-def tier_for(slug, value):
-    return sum(1 for t in TIERS.get(slug, [1]) if value is not None and value >= t)
-
-
 def main():
     prev = {}
     if os.path.exists(OUT_PATH):
         with open(OUT_PATH) as f:
             prev = json.load(f).get("badges", {})
-    badges = {slug: dict(prev.get(slug, {"tier": 0, "value": None})) for slug in set(TIERS) | set(prev)}
+    badges = {slug: dict(prev.get(slug, {"tier": 0, "value": None})) for slug in set(CATALOG) | set(prev)}
 
     try:
         scraped = scrape_earned()
@@ -174,7 +165,6 @@ def main():
                     badges["starstruck"]["repo"] = result[0]
                 for slug, value in assign(result):
                     badges[slug]["value"] = value
-                    badges[slug]["tier"] = max(badges[slug]["tier"], tier_for(slug, value))
             except Exception as e:  # noqa: BLE001 -- keep previous numbers
                 warn(f"{name}: {e}")
     else:
