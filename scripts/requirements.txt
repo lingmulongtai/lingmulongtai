@@ -1,0 +1,2 @@
+# only render_portrait.py needs this; the daily scripts are standard library only
+Pillow>=10.0
