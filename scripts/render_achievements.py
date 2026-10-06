@@ -96,9 +96,8 @@ def progress(tier, value, tiers, unit):
     if value is None:
         floor = tiers[tier - 1] if tier else 0
         return floor / nxt, f"{floor:,}{'+' if tier else ''} / {nxt:,} {unit}"
-    if value >= nxt:  # threshold met, GitHub hasn't awarded it yet
-        return 1.0, f"{value:,} / {nxt:,} · {'x' + str(tier + 1) if tier else 'unlock'} pending"
-    return value / nxt, f"{value:,} / {nxt:,} {unit}"
+    # a count past the threshold stays as-is: GitHub awards tiers on its own schedule
+    return min(1.0, value / nxt), f"{value:,} / {nxt:,} {unit}"
 
 
 def clip(text):

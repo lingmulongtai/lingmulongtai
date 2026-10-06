@@ -70,13 +70,12 @@ def scrape_earned():
 
 PR_QUERY = """
 query($q: String!, $cursor: String) {
-  search(query: $q, type: ISSUE, first: 50, after: $cursor) {
+  search(query: $q, type: ISSUE, first: 100, after: $cursor) {
     issueCount
     pageInfo { hasNextPage endCursor }
     nodes {
       ... on PullRequest {
         reviews { totalCount }
-        commits(first: 100) { nodes { commit { authors(first: 10) { nodes { user { login } } } } } }
       }
     }
   }
@@ -84,25 +83,24 @@ query($q: String!, $cursor: String) {
 
 
 def merged_pr_stats():
-    """Merged PR count, PRs with a co-authored commit, PRs merged without review."""
+    """Merged PR count and PRs merged without review.
+
+    No co-author count for Pair Extraordinaire: GitHub's tally doesn't match
+    anything the API exposes (it ignores most AI co-authors, for one), so that
+    card shows only the tier GitHub reports.
+    """
     q = f"type:pr author:{USER} is:merged"
-    cursor, total, coauthored, unreviewed = None, 0, 0, 0
+    cursor, total, unreviewed = None, 0, 0
     for _ in range(20):  # search caps out at 1,000 results anyway
         page = graphql(PR_QUERY, q=q, cursor=cursor)["search"]
         total = page["issueCount"]
         for pr in page["nodes"]:
-            if not pr:
-                continue
-            # commit authors include Co-authored-by trailers, resolved to accounts
-            # the way GitHub does it; unresolved emails (most AI/bot trailers) are null
-            logins = {a["user"]["login"].lower() for c in pr["commits"]["nodes"]
-                      for a in c["commit"]["authors"]["nodes"] if a["user"]}
-            coauthored += bool(logins - {USER.lower()})
-            unreviewed += pr["reviews"]["totalCount"] == 0
+            if pr:
+                unreviewed += pr["reviews"]["totalCount"] == 0
         if not page["pageInfo"]["hasNextPage"]:
             break
         cursor = page["pageInfo"]["endCursor"]
-    return total, coauthored, unreviewed
+    return total, unreviewed
 
 
 def top_repo():
@@ -152,7 +150,7 @@ def main():
     if TOKEN:
         metrics = [
             ("merged PRs", merged_pr_stats,
-             lambda r: [("pull-shark", r[0]), ("pair-extraordinaire", r[1]), ("yolo", min(r[2], 1))]),
+             lambda r: [("pull-shark", r[0]), ("yolo", min(r[1], 1))]),
             ("top repo", top_repo, lambda r: [("starstruck", r[1])]),
             ("discussion answers", accepted_answers, lambda r: [("galaxy-brain", r)]),
             ("sponsoring", sponsoring, lambda r: [("public-sponsor", min(r, 1))]),
