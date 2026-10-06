@@ -23,6 +23,13 @@
 <br>
 <br>
 
+<h3><code>ryuta@github ~ $ ./achievements.sh</code></h3>
+
+<img src="./assets/achievements.svg" width="860" alt="Ryuta's GitHub achievements with progress toward the next tier, plus achievements computed from contribution data, refreshed daily" />
+
+<br>
+<br>
+
 <h3><code>ryuta@github ~ $ cat about.txt</code></h3>
 
 <p><b>Engineering Student · AI Apps · Embedded Systems · Creative Tech</b></p>
@@ -36,11 +43,11 @@ AI-assisted tools, sensor-driven prototypes, and clean interfaces for creators.
 
 <h3><code>ryuta@github ~ $ ls ./stack</code></h3>
 
-<img src="https://skillicons.dev/icons?i=python,js,ts,react,nextjs,nodejs,html,css,tailwind,git,github,vscode,arduino,firebase,vercel&perline=15" alt="Python, JavaScript, TypeScript, React, Next.js, Node.js, HTML, CSS, Tailwind CSS, Git, GitHub, VS Code, Arduino, Firebase, Vercel" />
+<img src="https://skillicons.dev/icons?i=python,ts,js,kotlin,rust,cs,react,nextjs,nodejs,html,css,tailwind,arduino,firebase,vercel,git,github,vscode&perline=9" alt="Python, TypeScript, JavaScript, Kotlin, Rust, C#, React, Next.js, Node.js, HTML, CSS, Tailwind CSS, Arduino, Firebase, Vercel, Git, GitHub, VS Code" />
 
 <p><sub><code>~/stack/learning</code></sub></p>
 
-<img src="https://skillicons.dev/icons?i=cpp,java,kotlin,swift,rust,fastapi,docker,raspberrypi,linux,matlab&perline=10" alt="C++, Java, Kotlin, Swift, Rust, FastAPI, Docker, Raspberry Pi, Linux, MATLAB" />
+<img src="https://skillicons.dev/icons?i=cpp,java,swift,fastapi,docker,raspberrypi,linux,matlab&perline=8" alt="C++, Java, Swift, FastAPI, Docker, Raspberry Pi, Linux, MATLAB" />
 
 <br>
 <br>
@@ -61,6 +68,7 @@ AI-assisted tools, sensor-driven prototypes, and clean interfaces for creators.
 
 <h3><code>ryuta@github ~ $ ./links.sh</code></h3>
 
+<a href="https://lingmulongtai.github.io/my-github-portfolio/"><img src="https://img.shields.io/badge/Portfolio-Projects-38bdf8?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio: Ryuta Suzuki — Projects" /></a>
 <a href="https://github.com/lingmulongtai"><img src="https://img.shields.io/badge/GitHub-lingmulongtai-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="GitHub: lingmulongtai" /></a>
 <a href="https://www.linkedin.com/in/ryuta-suzuki-101372372/"><img src="https://img.shields.io/badge/LinkedIn-Ryuta%20Suzuki-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn: Ryuta Suzuki" /></a>
 
