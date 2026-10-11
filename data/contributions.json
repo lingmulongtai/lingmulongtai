@@ -1,18 +1,18 @@
 {
  "username": "lingmulongtai",
  "source": "github",
- "generated_at": "2026-10-10T19:22:49Z",
+ "generated_at": "2026-10-11T19:36:47Z",
  "range": {
-  "start": "2025-10-05",
-  "end": "2026-10-10"
+  "start": "2025-10-12",
+  "end": "2026-10-11"
  },
- "total_contributions": 3238,
- "active_days": 110,
- "avg_per_active_day": 29.4,
+ "total_contributions": 3214,
+ "active_days": 105,
+ "avg_per_active_day": 30.6,
  "current_streak": {
-  "length": 0,
-  "start": null,
-  "end": null
+  "length": 1,
+  "start": "2026-10-11",
+  "end": "2026-10-11"
  },
  "longest_streak": {
   "length": 13,
@@ -25,13 +25,13 @@
  },
  "busiest_weekday": {
   "name": "Sunday",
-  "total": 1161,
-  "avg": 21.9
+  "total": 1170,
+  "avg": 22.1
  },
  "monthly": [
   {
    "month": "2025-10",
-   "total": 57
+   "total": 20
   },
   {
    "month": "2025-11",
@@ -79,45 +79,10 @@
   },
   {
    "month": "2026-10",
-   "total": 125
+   "total": 138
   }
  ],
  "days": [
-  {
-   "date": "2025-10-05",
-   "count": 4,
-   "level": 1
-  },
-  {
-   "date": "2025-10-06",
-   "count": 7,
-   "level": 1
-  },
-  {
-   "date": "2025-10-07",
-   "count": 3,
-   "level": 1
-  },
-  {
-   "date": "2025-10-08",
-   "count": 0,
-   "level": 0
-  },
-  {
-   "date": "2025-10-09",
-   "count": 6,
-   "level": 1
-  },
-  {
-   "date": "2025-10-10",
-   "count": 10,
-   "level": 1
-  },
-  {
-   "date": "2025-10-11",
-   "count": 7,
-   "level": 1
-  },
   {
    "date": "2025-10-12",
    "count": 0,
@@ -1937,6 +1902,11 @@
    "date": "2026-10-10",
    "count": 0,
    "level": 0
+  },
+  {
+   "date": "2026-10-11",
+   "count": 13,
+   "level": 1
   }
  ]
 }
