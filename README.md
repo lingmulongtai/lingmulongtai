@@ -27,6 +27,8 @@
 
 <img src="./assets/achievements.svg" width="860" alt="Ryuta's GitHub achievements with progress toward the next tier, plus achievements computed from contribution data, refreshed daily" />
 
+<p><sub>GitHub badges reflect the public profile. Badges not shown there are not assumed to be locked; unavailable data is shown as unavailable. Local achievements are calculated from the contribution data.</sub></p>
+
 <br>
 <br>
 
