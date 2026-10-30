@@ -122,14 +122,16 @@ for slug, state in (ach["badges"].items() if available else []):
     if slug == "starstruck" and state.get("repo"):
         unit = f"★ {state['repo']}"
     ratio, text = progress(tier, value, tiers, unit)
+    if not tier:
+        ratio, text = 0.0, "not shown publicly"
     github_cards.append({"name": name, "icon": icon, "tier": min(tier, 4), "ratio": ratio,
                          "text": text or hint or "", "group": "github", "max_tier": len(tiers) or 1})
 for slug, (name, icon, unit, hint) in GITHUB.items():  # catalog badges missing from the data file
     if available and slug not in ach["badges"]:
         github_cards.append({"name": name, "icon": icon, "tier": 0, "ratio": 0.0,
-                             "text": hint or f"? / {TIERS[slug][0]} {unit}", "group": "github",
+                             "text": "not shown publicly", "group": "github",
                              "max_tier": len(TIERS.get(slug, [])) or 1})
-# earned first (highest tier first), then locked by how close they are
+# Publicly shown badges first, followed by badges not shown on the profile.
 github_cards.sort(key=lambda c: (c["tier"] == 0, -c["tier"], -c["ratio"]))
 
 local_defs = [
@@ -210,17 +212,19 @@ def medal(i, cx, cy, card):
     else:
         out.append(f'<circle cx="{cx:.1f}" cy="{cy}" r="{MEDAL_R}" fill="#111a2e" stroke="#2a3a55" stroke-dasharray="3 3"/>')
         out.append(f'<g {place} fill="{LOCKED}" color="{LOCKED}" opacity=".8">{icon}</g>')
-        lx, ly = cx + 16, cy + 15
-        out.append(f'<circle cx="{lx:.1f}" cy="{ly}" r="8.5" fill="#0b1020" stroke="#2a3a55"/>'
-                   f'<rect x="{lx - 3.6:.1f}" y="{ly - 1}" width="7.2" height="5.6" rx="1" fill="#8492a6"/>'
-                   f'<path d="M{lx - 2.3:.1f} {ly - 1}v-1.6a2.3 2.3 0 0 1 4.6 0v1.6" fill="none" stroke="#8492a6" stroke-width="1.3"/>')
+        if card["group"] != "github":
+            lx, ly = cx + 16, cy + 15
+            out.append(f'<circle cx="{lx:.1f}" cy="{ly}" r="8.5" fill="#0b1020" stroke="#2a3a55"/>'
+                       f'<rect x="{lx - 3.6:.1f}" y="{ly - 1}" width="7.2" height="5.6" rx="1" fill="#8492a6"/>'
+                       f'<path d="M{lx - 2.3:.1f} {ly - 1}v-1.6a2.3 2.3 0 0 1 4.6 0v1.6" fill="none" stroke="#8492a6" stroke-width="1.3"/>')
     return "".join(out)
 
 
 def card_svg(i, x, y, card, delay):
     k = card["tier"]
     edge = f'stroke="{TIER_STYLE[k][1]}" stroke-opacity=".35"' if k else f'stroke="{PANEL_EDGE}"'
-    label, color = (TIER_STYLE[k][0], TIER_STYLE[k][1]) if k else ("LOCKED", MUTED)
+    label, color = (TIER_STYLE[k][0], TIER_STYLE[k][1]) if k else (
+        "NOT SHOWN" if card["group"] == "github" else "LOCKED", MUTED)
     if k and card["max_tier"] == 1:
         label = "UNLOCKED"
     sub = "github badge" if card["group"] == "github" else "local · from data"
@@ -250,7 +254,7 @@ def summary_svg(x, y, delay):
         f'<rect x="{x:.1f}" y="{y}" width="{CARD_W:.1f}" height="{CARD_H}" rx="10" fill="{PANEL}" stroke="{PANEL_EDGE}"/>',
         f'<text x="{x + 16:.1f}" y="{y + 28}" fill="{MUTED}" font-size="13">$ progress</text>',
         f'<text x="{x + 16:.1f}" y="{y + 64}" fill="{CYAN}" font-size="30" font-weight="700">{gh_unlocked}/{len(github_cards)}'
-        f'<tspan fill="{MUTED}" font-size="12" font-weight="400"> github</tspan></text>',
+        f'<tspan fill="{MUTED}" font-size="12" font-weight="400"> public</tspan></text>',
         f'<text x="{x + 16:.1f}" y="{y + 88}" fill="{INK}" font-size="15" font-weight="700">{local_unlocked}/{len(local_cards)}'
         f'<tspan fill="{MUTED}" font-size="12" font-weight="400"> local</tspan></text>',
     ]
