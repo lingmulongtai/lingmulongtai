@@ -142,10 +142,11 @@ def main():
             try:
                 result = fn()
                 print(f"{name}: {result}")
-                if name == "top repo":
+                if name == "top repo" and badges["starstruck"]["tier"]:
                     badges["starstruck"]["repo"] = result[0]
                 for slug, value in assign(result):
-                    badges[slug]["value"] = value
+                    if badges[slug]["tier"]:
+                        badges[slug]["value"] = value
             except Exception as e:  # noqa: BLE001 -- leave unavailable metrics unknown
                 warn(f"{name}: {e}")
     elif not TOKEN:

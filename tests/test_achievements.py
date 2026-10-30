@@ -65,6 +65,17 @@ class FetchTests(unittest.TestCase):
         self.assertIsNone(badges["public-sponsor"]["value"])
         self.assertIsNone(badges["galaxy-brain"]["value"])
 
+    def test_public_metrics_do_not_claim_an_unshown_badge_is_locked(self):
+        with patch.object(fetch, "OUT_PATH", str(self.out)), patch.object(fetch, "TOKEN", "token"), \
+                patch.object(fetch, "scrape_earned", return_value={"pull-shark": 2}), \
+                patch.object(fetch, "merged_pr_stats", return_value=(100, 1)), \
+                patch.object(fetch, "top_repo", return_value=("public-repo", 4)):
+            fetch.main()
+        badges = json.loads(self.out.read_text(encoding="utf-8"))["badges"]
+        self.assertEqual(badges["pull-shark"]["value"], 100)
+        self.assertIsNone(badges["starstruck"]["value"])
+        self.assertNotIn("repo", badges["starstruck"])
+
 
 class RenderTests(unittest.TestCase):
     def test_unavailable_badges_are_not_rendered_as_locked_or_fresh(self):
@@ -95,13 +106,14 @@ class RenderTests(unittest.TestCase):
             shutil.copy(ROOT / "data" / "contributions.json", root / "data" / "contributions.json")
             (root / "data" / "achievements.json").write_text(json.dumps({
                 "available": True, "earned_at": "2026-10-31T00:00:00Z",
-                "badges": {"starstruck": {"tier": 0, "value": 2, "repo": "<x&y>"}}
+                "badges": {"starstruck": {"tier": 1, "value": 20, "repo": "<x&y>"}}
             }), encoding="utf-8")
             subprocess.run([sys.executable, str(root / "scripts" / "render_achievements.py")], check=True)
             svg = (root / "assets" / "achievements.svg").read_text(encoding="utf-8")
             ET.fromstring(svg)
             self.assertIn("&lt;x&amp;y&gt;", svg)
-            self.assertIn("? / 2 merged PRs", svg)
+            self.assertIn("not shown publicly", svg)
+            self.assertIn("NOT SHOWN", svg)
             self.assertNotIn(".t{opacity:0", svg)
             self.assertNotIn("transform-origin:left;transform:scaleX(0)", svg)
 
