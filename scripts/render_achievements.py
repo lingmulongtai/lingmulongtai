@@ -94,8 +94,10 @@ def progress(tier, value, tiers, unit):
         return 1.0, f"{shown} {unit} · MAX"
     nxt = tiers[tier]
     if value is None:
-        floor = tiers[tier - 1] if tier else 0
-        return floor / nxt, f"{floor:,}{'+' if tier else ''} / {nxt:,} {unit}"
+        if not tier:
+            return 0.0, f"? / {nxt:,} {unit}"
+        floor = tiers[tier - 1]
+        return floor / nxt, f"{floor:,}+ / {nxt:,} {unit}"
     # a count past the threshold stays as-is: GitHub awards tiers on its own schedule
     return min(1.0, value / nxt), f"{value:,} / {nxt:,} {unit}"
 
@@ -109,8 +111,9 @@ contrib = load_data()
 with open(os.path.join(ROOT, "data", "achievements.json")) as f:
     ach = json.load(f)
 
+available = ach.get("available", True)
 github_cards = []
-for slug, state in ach["badges"].items():
+for slug, state in (ach["badges"].items() if available else []):
     name, icon, unit, hint = GITHUB.get(slug, (slug.replace("-", " ").title(), "unknown", None, None))
     tiers = TIERS.get(slug, [])
     value, tier = state.get("value"), state.get("tier", 0)
@@ -122,7 +125,7 @@ for slug, state in ach["badges"].items():
     github_cards.append({"name": name, "icon": icon, "tier": min(tier, 4), "ratio": ratio,
                          "text": text or hint or "", "group": "github", "max_tier": len(tiers) or 1})
 for slug, (name, icon, unit, hint) in GITHUB.items():  # catalog badges missing from the data file
-    if slug not in ach["badges"]:
+    if available and slug not in ach["badges"]:
         github_cards.append({"name": name, "icon": icon, "tier": 0, "ratio": 0.0,
                              "text": hint or f"? / {TIERS[slug][0]} {unit}", "group": "github",
                              "max_tier": len(TIERS.get(slug, [])) or 1})
@@ -149,7 +152,7 @@ gh_unlocked = sum(1 for c in github_cards if c["tier"])
 local_unlocked = sum(1 for c in local_cards if c["tier"])
 
 # ---- layout ------------------------------------------------------------------
-gh_rows = math.ceil((len(github_cards) + 1) / COLS)  # +1 slot for the summary card
+gh_rows = max(1, math.ceil((len(github_cards) + 1) / COLS))  # +1 slot for summary or unavailable text
 local_rows = math.ceil(len(local_cards) / COLS)
 top = TITLEBAR_H + 16
 gh_top = top + LABEL_H
@@ -174,10 +177,12 @@ style = (
     "@media (prefers-reduced-motion:reduce){.t,.bar{opacity:1!important;transform:none!important;animation:none!important}"
     ".glow,.sh{animation:none}}"
 )
-updated = datetime.date.fromisoformat(ach["generated_at"][:10])
+earned_at = ach.get("earned_at", ach.get("generated_at"))
+updated = datetime.date.fromisoformat(earned_at[:10]) if available and earned_at else None
+status = f"updated {updated:%b} {updated.day}" if updated else "GitHub data unavailable"
 parts = [
     svg_open(W, H, style),
-    window(W, H, "./achievements.sh", right=f"updated {updated:%b} {updated.day}"),
+    window(W, H, "./achievements.sh", right=status),
     '<defs><filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>',
 ]
 for k, (_, light, dark) in TIER_STYLE.items():
@@ -262,8 +267,12 @@ parts.append(f'<text x="{PAD}" y="{top + 18}" fill="{MUTED}" font-size="13">$ gh
 for i, card in enumerate(github_cards):
     x, y = slot_xy(i, gh_top)
     parts.append(card_svg(i, x, y, card, i * 0.08))
-x, y = slot_xy(len(github_cards), gh_top)
-parts.append(summary_svg(x, y, len(github_cards) * 0.08))
+if available:
+    x, y = slot_xy(len(github_cards), gh_top)
+    parts.append(summary_svg(x, y, len(github_cards) * 0.08))
+else:
+    parts.append(f'<text x="{PAD}" y="{gh_top + 36}" fill="{MUTED}" font-size="14">'
+                 'GitHub achievements unavailable; retrying on the next update.</text>')
 
 parts.append(f'<text x="{PAD}" y="{local_label + 18}" fill="{MUTED}" font-size="13">$ ./local-achievements</text>')
 for j, card in enumerate(local_cards):
