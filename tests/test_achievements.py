@@ -102,6 +102,8 @@ class RenderTests(unittest.TestCase):
             ET.fromstring(svg)
             self.assertIn("&lt;x&amp;y&gt;", svg)
             self.assertIn("? / 2 merged PRs", svg)
+            self.assertNotIn(".t{opacity:0", svg)
+            self.assertNotIn("transform-origin:left;transform:scaleX(0)", svg)
 
 
 if __name__ == "__main__":

@@ -166,10 +166,10 @@ def slot_xy(i, y0):
 
 
 style = (
-    ".t{opacity:0;animation:in .5s ease-out both}"
+    ".t{animation:in .5s ease-out both}"
     "@keyframes in{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}"
-    ".bar{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:fill 1s ease-out both}"
-    "@keyframes fill{to{transform:scaleX(1)}}"
+    ".bar{transform-box:fill-box;transform-origin:left;animation:fill 1s ease-out both}"
+    "@keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}"
     ".glow{animation:pulse 3.2s ease-in-out infinite}"
     "@keyframes pulse{0%,100%{opacity:.25}50%{opacity:.6}}"
     ".sh{animation:shine 6s ease-in-out infinite}"
