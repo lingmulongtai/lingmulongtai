@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Render the achievements panel: GitHub badges (earned ones glow, locked ones show
-a lock) with a progress bar toward the next tier, a progress summary, and a row
-of local achievements computed from data/contributions.json.
+Render the achievements panel: publicly shown GitHub badges and their available
+progress, badges not shown publicly, and local achievements computed from
+data/contributions.json.
 
 Reads data/achievements.json (fetch_achievements.py) and data/contributions.json.
 
