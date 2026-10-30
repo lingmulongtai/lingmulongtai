@@ -1,6 +1,7 @@
 name: Update profile art
 
-# Refreshes the contribution graph + stats card from real data every day.
+# Refreshes the contribution graph, stats card and achievements panel from real
+# data every day.
 # The ASCII portrait is rendered by hand (scripts/render_portrait.py).
 
 on:
@@ -40,9 +41,17 @@ jobs:
       - name: Render stats card
         run: python scripts/render_stats.py
 
+      - name: Fetch achievements
+        run: python scripts/fetch_achievements.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Render achievements panel
+        run: python scripts/render_achievements.py
+
       - name: Commit refreshed art
         run: |
-          git add data/contributions.json assets/contrib-heatmap.svg assets/stats.svg
+          git add data/contributions.json data/achievements.json assets/contrib-heatmap.svg assets/stats.svg assets/achievements.svg
           if git diff --cached --quiet; then
             echo "nothing changed"
             exit 0
