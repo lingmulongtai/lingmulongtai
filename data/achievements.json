@@ -1,7 +1,7 @@
 {
  "username": "lingmulongtai",
- "generated_at": "2026-10-30T16:15:03Z",
- "earned_at": "2026-10-30T16:15:03Z",
+ "generated_at": "2026-10-30T16:22:04Z",
+ "earned_at": "2026-10-30T16:22:04Z",
  "available": true,
  "badges": {
   "galaxy-brain": {
@@ -26,8 +26,7 @@
   },
   "starstruck": {
    "tier": 0,
-   "value": 4,
-   "repo": "KUAS-reception"
+   "value": null
   },
   "yolo": {
    "tier": 1,
