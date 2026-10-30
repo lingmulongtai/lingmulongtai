@@ -36,7 +36,7 @@ TITLEBAR_H = 32
 
 
 def load_data():
-    with open(DATA_PATH) as f:
+    with open(DATA_PATH, encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -85,6 +85,6 @@ def window(w, h, title, right="", scale=1.0):
 def write_svg(name, svg):
     os.makedirs(ASSETS, exist_ok=True)
     path = os.path.join(ASSETS, name)
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write(svg)
     print(f"wrote assets/{name} ({len(svg) // 1024} KB)")
