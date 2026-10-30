@@ -5,14 +5,15 @@ Collect GitHub achievement state + progress numbers into data/achievements.json.
 Two sources:
   1. the public achievements tab -- the only source of truth for which badges
      are earned and at what tier, read from the badge image names
-     (pull-shark-bronze-*.png -> x2). Tiers never go backwards.
+     (pull-shark-bronze-*.png -> x2). Each successful scrape replaces the
+     previous public badge state.
   2. the GraphQL API -- the numbers behind each badge (merged PRs, stars,
      accepted answers ...) for the progress bars. They never raise a tier on
      their own: GitHub awards tiers with a delay and by its own counting. Needs
      a token; the workflow passes the built-in GITHUB_TOKEN.
 
-Whatever a source fails to provide is carried over from the previous run, and
-a failing source is reported as a workflow warning instead of failing the job.
+Failed sources are reported as workflow warnings. Unavailable metrics are not
+invented, and a failed public-page scrape hides the GitHub badge panel.
 
     GITHUB_TOKEN=... python scripts/fetch_achievements.py
 """
@@ -89,7 +90,7 @@ def merged_pr_stats():
     anything the API exposes (it ignores most AI co-authors, for one), so that
     card shows only the tier GitHub reports.
     """
-    q = f"type:pr author:{USER} is:merged"
+    q = f"type:pr author:{USER} is:merged is:public"
     cursor, total, unreviewed = None, 0, 0
     for _ in range(20):  # search caps out at 1,000 results anyway
         page = graphql(PR_QUERY, q=q, cursor=cursor)["search"]
@@ -107,7 +108,7 @@ def top_repo():
     data = graphql("""
     query($login: String!) {
       user(login: $login) {
-        repositories(first: 1, ownerAffiliations: OWNER, isFork: false,
+        repositories(first: 1, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC,
                      orderBy: {field: STARGAZERS, direction: DESC}) {
           nodes { name stargazerCount }
         }
@@ -117,43 +118,25 @@ def top_repo():
     return (nodes[0]["name"], nodes[0]["stargazerCount"]) if nodes else (None, 0)
 
 
-def accepted_answers():
-    data = graphql("""
-    query($login: String!) {
-      user(login: $login) { repositoryDiscussionComments(onlyAnswers: true) { totalCount } }
-    }""", login=USER)
-    return data["user"]["repositoryDiscussionComments"]["totalCount"]
-
-
-def sponsoring():
-    data = graphql("""
-    query($login: String!) { user(login: $login) { sponsoring { totalCount } } }""", login=USER)
-    return data["user"]["sponsoring"]["totalCount"]
-
-
 def main():
-    prev = {}
-    if os.path.exists(OUT_PATH):
-        with open(OUT_PATH) as f:
-            prev = json.load(f).get("badges", {})
-    badges = {slug: dict(prev.get(slug, {"tier": 0, "value": None})) for slug in set(CATALOG) | set(prev)}
-
+    now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    badges = {}
+    available = False
     try:
         scraped = scrape_earned()
         print("earned on profile:", ", ".join(f"{s} x{t}" for s, t in sorted(scraped.items())))
+        badges = {slug: {"tier": 0, "value": None} for slug in CATALOG}
         for slug, tier in scraped.items():
-            badges.setdefault(slug, {"tier": 0, "value": None})
-            badges[slug]["tier"] = max(badges[slug]["tier"], tier)
-    except Exception as e:  # noqa: BLE001 -- keep previous state
+            badges[slug] = {"tier": tier, "value": None}
+        available = True
+    except Exception as e:  # noqa: BLE001 -- hide unavailable public badge data
         warn(f"achievements tab: {e}")
 
-    if TOKEN:
+    if TOKEN and available:
         metrics = [
             ("merged PRs", merged_pr_stats,
              lambda r: [("pull-shark", r[0]), ("yolo", min(r[1], 1))]),
             ("top repo", top_repo, lambda r: [("starstruck", r[1])]),
-            ("discussion answers", accepted_answers, lambda r: [("galaxy-brain", r)]),
-            ("sponsoring", sponsoring, lambda r: [("public-sponsor", min(r, 1))]),
         ]
         for name, fn, assign in metrics:
             try:
@@ -163,14 +146,16 @@ def main():
                     badges["starstruck"]["repo"] = result[0]
                 for slug, value in assign(result):
                     badges[slug]["value"] = value
-            except Exception as e:  # noqa: BLE001 -- keep previous numbers
+            except Exception as e:  # noqa: BLE001 -- leave unavailable metrics unknown
                 warn(f"{name}: {e}")
-    else:
-        warn("GITHUB_TOKEN not set -- progress numbers carried over from the last run")
+    elif not TOKEN:
+        warn("GITHUB_TOKEN not set -- public progress numbers are unavailable")
 
     out = {
         "username": USER,
-        "generated_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "generated_at": now,
+        "earned_at": now if available else None,
+        "available": available,
         "badges": dict(sorted(badges.items())),
     }
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
