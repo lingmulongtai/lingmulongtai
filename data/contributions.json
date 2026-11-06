@@ -1,18 +1,18 @@
 {
  "username": "lingmulongtai",
  "source": "github",
- "generated_at": "2026-11-05T21:29:40Z",
+ "generated_at": "2026-11-06T20:57:02Z",
  "range": {
   "start": "2025-11-02",
-  "end": "2026-11-05"
+  "end": "2026-11-06"
  },
- "total_contributions": 5866,
- "active_days": 120,
- "avg_per_active_day": 48.9,
+ "total_contributions": 5870,
+ "active_days": 121,
+ "avg_per_active_day": 48.5,
  "current_streak": {
-  "length": 11,
+  "length": 12,
   "start": "2026-10-26",
-  "end": "2026-11-05"
+  "end": "2026-11-06"
  },
  "longest_streak": {
   "length": 13,
@@ -79,7 +79,7 @@
   },
   {
    "month": "2026-11",
-   "total": 602
+   "total": 606
   }
  ],
  "days": [
@@ -1926,6 +1926,11 @@
   {
    "date": "2026-11-05",
    "count": 57,
+   "level": 1
+  },
+  {
+   "date": "2026-11-06",
+   "count": 4,
    "level": 1
   }
  ]
