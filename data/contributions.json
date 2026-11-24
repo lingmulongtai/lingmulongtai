@@ -1,18 +1,18 @@
 {
  "username": "lingmulongtai",
  "source": "github",
- "generated_at": "2026-11-22T21:07:11Z",
+ "generated_at": "2026-11-24T02:23:56Z",
  "range": {
   "start": "2025-11-23",
-  "end": "2026-11-22"
+  "end": "2026-11-24"
  },
- "total_contributions": 8715,
- "active_days": 132,
- "avg_per_active_day": 66.0,
+ "total_contributions": 8755,
+ "active_days": 133,
+ "avg_per_active_day": 65.8,
  "current_streak": {
-  "length": 8,
+  "length": 9,
   "start": "2026-11-15",
-  "end": "2026-11-22"
+  "end": "2026-11-23"
  },
  "longest_streak": {
   "length": 13,
@@ -79,7 +79,7 @@
   },
   {
    "month": "2026-11",
-   "total": 1866
+   "total": 1906
   }
  ],
  "days": [
@@ -1221,12 +1221,12 @@
   {
    "date": "2026-07-08",
    "count": 363,
-   "level": 2
+   "level": 4
   },
   {
    "date": "2026-07-09",
    "count": 497,
-   "level": 2
+   "level": 4
   },
   {
    "date": "2026-07-10",
@@ -1246,12 +1246,12 @@
   {
    "date": "2026-07-13",
    "count": 247,
-   "level": 1
+   "level": 3
   },
   {
    "date": "2026-07-14",
    "count": 347,
-   "level": 2
+   "level": 3
   },
   {
    "date": "2026-07-15",
@@ -1701,22 +1701,22 @@
   {
    "date": "2026-10-12",
    "count": 173,
-   "level": 1
+   "level": 2
   },
   {
    "date": "2026-10-13",
    "count": 469,
-   "level": 2
+   "level": 4
   },
   {
    "date": "2026-10-14",
    "count": 316,
-   "level": 2
+   "level": 3
   },
   {
    "date": "2026-10-15",
    "count": 235,
-   "level": 1
+   "level": 3
   },
   {
    "date": "2026-10-16",
@@ -1726,12 +1726,12 @@
   {
    "date": "2026-10-17",
    "count": 414,
-   "level": 2
+   "level": 4
   },
   {
    "date": "2026-10-18",
    "count": 157,
-   "level": 1
+   "level": 2
   },
   {
    "date": "2026-10-19",
@@ -1741,7 +1741,7 @@
   {
    "date": "2026-10-20",
    "count": 118,
-   "level": 1
+   "level": 2
   },
   {
    "date": "2026-10-21",
@@ -1781,7 +1781,7 @@
   {
    "date": "2026-10-28",
    "count": 204,
-   "level": 1
+   "level": 2
   },
   {
    "date": "2026-10-29",
@@ -1791,12 +1791,12 @@
   {
    "date": "2026-10-30",
    "count": 270,
-   "level": 2
+   "level": 3
   },
   {
    "date": "2026-10-31",
    "count": 331,
-   "level": 2
+   "level": 3
   },
   {
    "date": "2026-11-01",
@@ -1811,12 +1811,12 @@
   {
    "date": "2026-11-03",
    "count": 183,
-   "level": 1
+   "level": 2
   },
   {
    "date": "2026-11-04",
    "count": 366,
-   "level": 2
+   "level": 4
   },
   {
    "date": "2026-11-05",
@@ -1861,7 +1861,7 @@
   {
    "date": "2026-11-13",
    "count": 254,
-   "level": 2
+   "level": 3
   },
   {
    "date": "2026-11-14",
@@ -1881,7 +1881,7 @@
   {
    "date": "2026-11-17",
    "count": 137,
-   "level": 1
+   "level": 2
   },
   {
    "date": "2026-11-18",
@@ -1896,17 +1896,27 @@
   {
    "date": "2026-11-20",
    "count": 238,
-   "level": 1
+   "level": 3
   },
   {
    "date": "2026-11-21",
    "count": 184,
-   "level": 1
+   "level": 2
   },
   {
    "date": "2026-11-22",
    "count": 255,
-   "level": 2
+   "level": 3
+  },
+  {
+   "date": "2026-11-23",
+   "count": 40,
+   "level": 1
+  },
+  {
+   "date": "2026-11-24",
+   "count": 0,
+   "level": 0
   }
  ]
 }
